@@ -46,7 +46,7 @@ body {
 
 #content 
 {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -62,7 +62,7 @@ body {
     margin: 0 7px 14px 7px;
     /* max-width: 500px; */
     min-width: 1700px;
-    /* width: auto; */
+    width: auto;
     z-index: 1;
     align-items: center;
     justify-content: center;
