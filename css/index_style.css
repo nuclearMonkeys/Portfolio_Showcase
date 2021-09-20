@@ -44,30 +44,35 @@ body {
     padding: 20px;
 }
 
+#content 
+{
+    padding: 16px;
+}
 
 #content .portfolio-item 
 {
     flex: 1 1 auto;
-    padding: 8px;
+    padding: 16px;
     background: #e7e7e7;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
-    border-radius: 3px;
+    border-radius: 8px;
     float: left;
     text-align: center; 
+    width: 98.5%;
     /* margin: 0 7px 14px 7px; */
     /* max-width: 500px; */
     /* min-width: 117.25em; */
-    width: 100%;
+    /* width: 100%; */
     z-index: 1;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
 }
 
 #content .pic 
 {
     float: left;
     /* width: 20%; */
-    min-width: 320;
+    width: auto;
     z-index: 1;
 }
 
@@ -75,6 +80,7 @@ body {
 {
     float: left;
     padding: 7px 28px 7px 28px;
+    width: auto;
     /* width: 80%; */
     /* min-width: 500px; */
     z-index: 1;
