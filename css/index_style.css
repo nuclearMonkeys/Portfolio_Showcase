@@ -8,7 +8,6 @@ body, html
 body {
 
     /* display: flex; */
-    background: no-repeat fixed;
     background-color: #8f8f8f;
 }
 
@@ -74,6 +73,11 @@ body {
     /* width: 20%; */
     width: auto;
     z-index: 1;
+}
+
+#content .pic .a 
+{
+    background: no-repeat fixed;
 }
 
 #content .description 
