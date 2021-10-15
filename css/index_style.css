@@ -59,8 +59,11 @@ body {
     padding: 16px;
     position: relative;
     text-align: center; 
-    width: 98.5%;
+    width: 85%;
     z-index: 1;
+    top: 50%;
+    left: 6%;
+
     align-items: center;
     justify-content: center;
 }
@@ -77,50 +80,45 @@ body {
     width: 100%;
 }
 
-#content .portfolio-item .left-col .sub-text h1
+#content .portfolio-item .sub-text h1
 {
     color: #ffffff;
     font-size: 36px;
+    padding: 0px 16px 0px;
     text-align: left;
     vertical-align: top;
 }
 
-#content .portfolio-item .left-col .sub-text h2
+#content .portfolio-item .sub-text h2
 {
     color: #ffffff;
+    padding: 0px 16px 0px;
     text-align: left;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-#content .portfolio-item .pic a
+#content .portfolio-item .pic
 {
     float: left;
-    /* width: 20%; */
     width: auto;
     z-index: 1;
 }
 
-#content .portfolio-item .left-col .sub-text
+#content .portfolio-item .description 
 {
-    float: left;
-    font-size: 12px;
-    padding: 7px 28px 7px 28px;
-    width: auto;
-    /* width: 80%; */
-    /* min-width: 500px; */
+    /* float: left; */
+    text-align: left;
+    padding: 170px 56px 10px 515px;
+    /* width: auto; */
     z-index: 1;
 }
 
-
-
-#content .description 
+#content .portfolio-item .description li
 {
     float: left;
-    padding: 7px 28px 7px 28px;
-    width: auto;
-    /* width: 80%; */
-    /* min-width: 500px; */
-    z-index: 1;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+
 }
 
 /* #content .portfolio-item p 
