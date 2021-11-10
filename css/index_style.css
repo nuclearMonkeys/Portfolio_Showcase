@@ -11,7 +11,39 @@ body {
     background-color: #8f8f8f;
 }
 
+.header 
+{
+    border: 5px solid #222222;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    z-index: 3;
+}
 
+.header a 
+{
+
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content 
+{
+    padding-top: 102px;
+}
 
 .hero-image 
 {

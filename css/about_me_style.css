@@ -1,0 +1,95 @@
+body, html 
+{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    /* display: flex; */
+    background-color: #8f8f8f;
+}
+
+.header 
+{
+    border: 5px solid #222222;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    z-index: 3;
+}
+
+.header a 
+{
+
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#content 
+{
+    border-style: solid;
+    border-width: 1px;
+    border: 5px;
+    padding: 16px;
+}
+
+#content .portfolio-item .pic
+{
+    float: right;
+    width: auto;
+    z-index: 1;
+}
+
+#content .portfolio-item 
+{
+    background: #e7e7e7;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    display: table;
+    flex: 1 1 auto;
+    float: left;
+    margin: 8px;
+    padding: 16px;
+    position: relative;
+    text-align: center; 
+    width: 75%;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+}
+
+#content .portfolio-item .description 
+{
+    line-height: 2;
+    text-align: left;
+    padding: 125px 425px 100px 45px;
+    z-index: 1;
+}
+
+#content .portfolio-item .sub-text
+{
+    float: left;
+    color: #ffffff;
+    background: #222222;
+    position: table-cell;
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+}
+
+#content .portfolio-item .sub-text h1
+{
+    color: #ffffff;
+    font-size: 36px;
+    padding: 0px 16px 0px;
+    text-align: left;
+    vertical-align: top;
+}

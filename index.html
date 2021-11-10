@@ -7,12 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <meta charset="utf-8"> -->
         
-        <title>Personal Bootstrap Template</title>
+        <title>Home</title>
         <link rel="stylesheet" href="./css/index_style.css">
         
     </head>
 
     <body>
+        <div class="header" id="header">
+            <div class="header-right">
+                <a class="active" href="./index.html">Home</a>
+                <a href="./about_me.html">About me!</a>
+            </div>
+        </div>
         
         <div class="hero-image"></div>
 
@@ -54,7 +60,7 @@
                 </div>
 
                 <div class="pic">
-                    <a href="#"><img src="./images/Yahoo_Crawler_1.png" width="480" height="270" alt="View more info"/></a>
+                    <a href="#"><img src="./images/good_eatz_0.PNG" width="480" height="270" alt="View more info"/></a>
                 </div>
                 <div class="description">
                     <p></p>
@@ -81,7 +87,7 @@
                 </div>
                 <div class="description">
                     <p>DUEL is a 2D top down boss rush. Your cousin is on a path of destruction, and the only one that can stop him is you! Fulfill your destiny and destroy him before he destroys you!</p>
-                    <h3>Programmer</h3>
+                    <h3>Programmed w/ C# & Unity. Released on Windows, Mac, & Linux.</h3>
                     <ul>
                         <li>Programmed the player keyboard control and combo system</li>
                         <li>Used Unity's post processing to created transitions between scenes</li>
@@ -102,7 +108,7 @@
                 </div>
                 <div class="description">
                     <p>Combat Evolved is a 2-4 player competitive top down tank shooter. The goal, destory everyone else's tanks. With various levels, weapons, and power ups, Combat Evolved is a quick and easy to pick up game for anyone.</p>
-                    <h3>Lead Programmer/Designer</h3>
+                    <h3>Programmed w/ C# & Unity. Released on Windows.</h3>
                     <ul>
                         <li>Created the local multiplayer framework using Unity's experimental Input System.</li>
                         <li>Implemented a camera system where it zooms based on player's positions</li>
@@ -134,27 +140,6 @@
                 </div>
             </div>
 
-            <!-- <div class="portfolio-item"> 
-                <div class="sub-text">
-                    <h1>Cyber Silent Stalker</h1>
-                    <h2>Winter 2019 - Spring 2019</h2>
-                    <h2>VGDC Year Long Project 2019</h2>
-                </div>
-
-                <div class="pic">
-                    <a href="#"><img src="./images/Cyber_Silent_Stalker_0.png" width="480" height="270" alt="View more info"/></a>
-                </div>
-                <div class="description">
-                    <p>CSS is a 2.5D top-down stealth game where you have to navigate through a maze. That catch is that your only vision is yourself and the enemy's vision.</p>
-                    <h3>Programmer</h3>
-                    <ul>
-                        <li>Made a robust audio manager that plays audio clips by name.</li>
-                        <li>Created various sound effects and composed the main theme.</li>
-                        <li>Used black box testing to evaulate testers' reactions to level design and mechanics</li>
-                    </ul>
-                </div>
-            </div> -->
-
             <div class="portfolio-item"> 
                 <div class="sub-text">
                     <h1>Cyber Silent Stalker</h1>
@@ -167,7 +152,7 @@
                 </div>
                 <div class="description">
                     <p>CSS is a 2.5D top-down stealth game where you have to navigate through a maze. That catch is that your only vision is yourself and the enemy's vision.</p>
-                    <h3>Programmer</h3>
+                    <h3>Programmed w/ C# & Unity. Released on Windows & WebGL.</h3>
                     <ul>
                         <li>Made a robust audio manager that plays audio clips by name.</li>
                         <li>Created various sound effects and composed the main theme.</li>
@@ -178,4 +163,19 @@
 
         </div>
     </body>
+
+    <script>
+        window.onscroll = function() {stick()};
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function stick() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </html>
