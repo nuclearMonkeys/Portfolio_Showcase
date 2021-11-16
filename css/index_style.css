@@ -187,27 +187,66 @@ body {
 }
 
 
-/* #content .portfolio-item p 
+#content .portfolio-item .slideshow-container 
 {
-    float: right;
-    width: 75%;
-} */
+    float: left;
+    width: 480;
+    z-index: 1;
+    margin: auto;
+}
 
-/* #content .portfolio-item .btn 
-{
-    margin: 0;
-} */
-
-/* #content .portfolio-item .btn a 
-{
-    display: block;
-    max-width: 183px;
-    max-height: 29px;
+/* Next & previous buttons */
+.slideshow-container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
     width: auto;
-    height: auto;
-    padding: 7px 0 0 0;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    float: left;
     font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-} */
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+}
+
+.prev 
+{
+    left: 1.5%;
+}
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 70%;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.active 
+{
+    background-color: #717171;
+}
+
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) 
+{
+    .prev, .next, .text {font-size: 11px;}
+}
